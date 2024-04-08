@@ -1,0 +1,26 @@
+import { Schema } from "mongoose";
+
+export const userSchema = new Schema({
+    name :{
+        type :String , 
+        required:true,
+        lowercase:true,
+        unique:true,
+        minlength:2
+    },
+    email:{
+        type:String,
+        required:true,
+        unique:true,
+    },
+    password:{
+        type:String,
+        required:true,
+        minlength:5
+    },
+    picture: {
+        type:String,
+        
+    },
+    confit
+},{timestamps:true})

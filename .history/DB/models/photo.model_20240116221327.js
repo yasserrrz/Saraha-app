@@ -1,0 +1,3 @@
+
+
+const photoSchema = new Sc

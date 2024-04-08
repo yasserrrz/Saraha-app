@@ -1,0 +1,16 @@
+import { Schema } from "mongoose";
+
+
+const photoSchema = new Schema({
+    tite : {
+        type: String,
+        required: true,
+    },
+    path:{
+        type:String,
+    
+    }
+    
+})
+
+export const photosModel = module("Photo" , photoSchema)
